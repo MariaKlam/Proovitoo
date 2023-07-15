@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>Erply test page</title>
+  </head>
+  <body>
+    <div class="invoices-bar">
+      <div class="invoices">Invoices</div>
+      <div class="buttons">
+        <button><i class="fa-solid fa-arrow-up"></i>Export</button>
+        <button id="new"><i class="fa-regular fa-plus"></i> New</button>
+        <button><i class="fa fa-filter"></i></button>
+        <button id="open"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+      </div>
+    </div>
+    <div id="css-grid">
+      <form class="search1">
+        <input class="search1" type="search" placeholder="" /><button
+          type="submit"
+          id="search1">
+          Search
+        </button>
+      </form>
+    </div>
+    <div class="grid">
+      <span class="per-page"
+        >Results per page<select class="select">
+          <option value="20">20</option>
+          <option value="40">40</option>
+          <option value="60">60</option>
+        </select></span
+      >
+      <span class="current-page">
+        <button id="left">&lt;</button>
+        <button id="counter">1</button>
+        <button id="right">&gt;</button></span
+      >
+      <span class="page"
+        >Page
+        <select class="pagetab">
+          <option>20</option>
+        </select></span
+      >
+
+      <span class="first-row"><input type="checkbox" /></span>
+      <span class="first-row"><strong>Type</strong></span>
+      <span class="first-row"><strong>Date</strong></span>
+      <span class="first-row"><strong>Customer</strong></span>
+      <span class="first-row"><strong>Location</strong></span>
+      <span class="first-row"><strong>State</strong></span>
+      <span class="first-row" style="text-align: right"
+        ><strong>Total</strong></span
+      >
+      <span class="first-row"></span>
+
+      <span><input type="checkbox" /></span>
+      <span data-label="Type"
+        >Receipt <br /><span class="receiptnr">#100048</span></span
+      >
+      <span data-label="Date">21.10.2022</span>
+      <span data-label="Customer">Lydia Dias</span>
+      <span data-label="Location">Location #12</span>
+      <span data-label="State" class="status status-inprogress"
+        ><button><i class="fa-solid fa-circle"></i>In progress</button></span
+      >
+      <span data-label="Total" class="total">129.00 &#8364;</span>
+      <span class="ellips-row"
+        ><i class="fa-solid fa-ellipsis-vertical"></i
+      ></span>
+
+      <span><input type="checkbox" /></span>
+      <span data-label="Type"
+        >Receipt <br /><span class="receiptnr">#100048</span></span
+      >
+      <span data-label="Date"
+        >21.10.2022<br /><button class="alert">Due 2 days ago</button></span
+      >
+      <span data-label="Customer">Livia Siphron</span>
+      <span data-label="Location">Location #12</span>
+      <span data-label="State" class="status status-pending"
+        ><button><i class="fa-solid fa-circle"></i>Pending</button></span
+      >
+      <span data-label="Total" class="total"
+        >4147.20 &#8364; <br /><button class="alert">
+          unpaid 200.29 &#8364;
+        </button></span
+      >
+      <span class="ellips-row"
+        ><i class="fa-solid fa-ellipsis-vertical"></i
+      ></span>
+
+      <span><input type="checkbox" /></span>
+      <span data-label="Type"
+        >Invoice-Waybill <br /><span class="receiptnr">#100048</span></span
+      >
+      <span data-label="Date">21.10.2022</span>
+      <span data-label="Customer">Tatiana George</span>
+      <span data-label="Location">Location #12</span>
+      <span data-label="State" class="status status-success"
+        ><button><i class="fa-solid fa-circle"></i>Success</button></span
+      >
+      <span data-label="Total" class="total">129.00 &#8364;</span>
+      <span class="ellips-row"
+        ><i class="fa-solid fa-ellipsis-vertical"></i
+      ></span>
+
+      <span><input type="checkbox" /></span>
+      <span data-label="Type"
+        >Invoice-Waybill <br /><span class="receiptnr">#100048</span></span
+      >
+      <span data-label="Date">21.10.2022</span>
+      <span data-label="Customer">Dulce Lipshutz</span>
+      <span data-label="Location">Location #12</span>
+      <span data-label="State" class="status status-complete"
+        ><button><i class="fa-solid fa-circle"></i>Complete</button></span
+      >
+      <span data-label="Total" class="total">129.00 &#8364;</span>
+      <span class="ellips-row"
+        ><i class="fa-solid fa-ellipsis-vertical"></i
+      ></span>
+
+      <span><input type="checkbox" /></span>
+      <span data-label="Type"
+        >Prepayment inv. <br /><span class="receiptnr">#100048</span></span
+      >
+      <span data-label="Date">21.10.2022</span>
+      <span data-label="Customer">Paityn Philips</span>
+      <span data-label="Location">Location #12</span>
+      <span data-label="State" class="status status-inprogress"
+        ><button><i class="fa-solid fa-circle"></i>In progress</button></span
+      >
+      <span data-label="Total" class="total">129.00 &#8364;</span>
+      <span class="ellips-row"
+        ><i class="fa-solid fa-ellipsis-vertical"></i
+      ></span>
+
+      <span><input type="checkbox" /></span>
+      <span data-label="Type"
+        >Prepayment inv. <br /><span class="receiptnr">#100048</span></span
+      >
+      <span data-label="Date">21.10.2022</span>
+      <span data-label="Customer">Jordyin Mango</span>
+      <span data-label="Location">Location #12</span>
+      <span data-label="State" class="status status-pending"
+        ><button><i class="fa-solid fa-circle"></i>Pending</button></span
+      >
+      <span data-label="Total" class="total">129.00 &#8364;</span>
+      <span class="ellips-row"
+        ><i class="fa-solid fa-ellipsis-vertical"></i
+      ></span>
+
+      <span><input type="checkbox" /></span>
+      <span data-label="Type"
+        >Receipt <br /><span class="receiptnr">#100048</span></span
+      >
+      <span data-label="Date"
+        >21.10.2022<br /><button class="alert">Due 2 days ago</button></span
+      >
+      <span data-label="Customer">Paityn Workman</span>
+      <span data-label="Location">Location #12</span>
+      <span data-label="State" class="status status-success"
+        ><button><i class="fa-solid fa-circle"></i>Success</button></span
+      >
+      <span data-label="Total" class="total">129.00 &#8364;</span>
+      <span class="ellips-row"
+        ><i class="fa-solid fa-ellipsis-vertical"></i
+      ></span>
+
+      <span><input type="checkbox" /></span>
+      <span data-label="Type"
+        >Receipt <br /><span class="receiptnr">#100048</span></span
+      >
+      <span data-label="Date"
+        >21.10.2022<br /><button class="alert">Due 2 days ago</button></span
+      >
+      <span data-label="Customer">Davis Dorwart</span>
+      <span data-label="Location">Location #12</span>
+      <span data-label="State" class="status status-complete"
+        ><button><i class="fa-solid fa-circle"></i>Complete</button></span
+      >
+      <span data-label="Total" class="total">129.00 &#8364;</span>
+      <span class="ellips-row"
+        ><i class="fa-solid fa-ellipsis-vertical"></i
+      ></span>
+
+      <span><input type="checkbox" /></span>
+      <span data-label="Type"
+        >Receipt <br /><span class="receiptnr">#100048</span></span
+      >
+      <span data-label="Date">21.10.2022</span>
+      <span data-label="Customer">Craig Workman</span>
+      <span data-label="Location">Location #12</span>
+      <span data-label="State" class="status status-complete"
+        ><button><i class="fa-solid fa-circle"></i>Complete</button></span
+      >
+      <span data-label="Total" class="total">129.00 &#8364;</span>
+      <span class="ellips-row"
+        ><i class="fa-solid fa-ellipsis-vertical"></i
+      ></span>
+
+      <span><input type="checkbox" /></span>
+      <span data-label="Type"
+        >Receipt <br /><span class="receiptnr">#100048</span></span
+      >
+      <span data-label="Date">21.10.2022</span>
+      <span data-label="Customer">Alfredo George</span>
+      <span data-label="Location">Location #12</span>
+      <span data-label="State" class="status status-complete"
+        ><button><i class="fa-solid fa-circle"></i>Complete</button></span
+      >
+      <span data-label="Total" class="total">129.00 &#8364;</span>
+      <span class="ellips-row"
+        ><i class="fa-solid fa-ellipsis-vertical"></i
+      ></span>
+    </div>
+    <div class="container">
+      <section class="sidebar">
+        <h2>Customers</h2>
+        <nav>
+          <button class="add">
+            <i class="fas fa-user-plus" style="color: #4a4b4d"></i>Add
+          </button>
+          <br />
+          <ul class="ABC">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+            <li>E</li>
+            <li>F</li>
+            <li>G</li>
+            <li>H</li>
+            <li>I</li>
+            <li>J</li>
+            <li>K</li>
+            <li>L</li>
+            <li>M</li>
+            <li>N</li>
+            <li>O</li>
+            <li>P</li>
+            <li>Q</li>
+            <li>R</li>
+            <li>S</li>
+            <li>T</li>
+            <li>U</li>
+            <li>V</li>
+            <li>W</li>
+            <li>X</li>
+            <li>Y</li>
+            <li>Z</li>
+          </ul>
+        </nav>
+        <br />
+        <form class="search">
+          <input class="search" type="search" placeholder="" />
+        </form>
+        <button type="submit" id="search">Search</button>
+        <ul class="company-list">
+          <li><span>Marathon Oil Corp.</span></li>
+          <li><span>Sealed Air</span></li>
+          <li><span>Southern Company</span></li>
+          <li><span>Atmos Energy</span></li>
+          <li><span>Equifax Inc.</span></li>
+          <li><span>Kansas City Southern</span></li>
+          <li><span>Fidelity National Information Services</span></li>
+          <li><span>Colgate-Palmolive</span></li>
+          <li><span>Air Products & Chemicals Inc.</span></li>
+          <li><span>Intuitive Surgical Inc.</span></li>
+          <li><span>Quest Diagnostics</span></li>
+          <li><span>Crown Castle International Corp.</span></li>
+          <li><span>News Corp. Class A</span></li>
+          <li><span>Federal Realty Investment Trust</span></li>
+          <li><span>Humana Inc.</span></li>
+        </ul>
+        <div class="sb">
+          <div class="addcustomer">Add customers</div>
+          <button class="close">&times;</button>
+          <p class="addcustomp">
+            You can add customers by pressing the Add + button in the corner or
+            by importing your clients from a CSV file
+          </p>
+          <button class="import">
+            <i class="fa-solid fa-cloud-arrow-up"></i>Import customers
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
