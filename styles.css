@@ -120,7 +120,7 @@ i {
   margin-right: 0px;
   margin-left: 0px;
   background-color: white;
-  width: 70%;
+  max-width: 70%;
   grid-template-columns: 1fr 2fr 2fr 4fr 2fr 2fr 2fr 1fr;
   grid-template-rows: 0.2fr 0.4fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
   max-height: 72vh;
@@ -455,14 +455,14 @@ input.search1 {
   font-size: 13px;
   font-weight: 600;
   border-radius: 2px 2px;
-  padding-top: 5px;
-  padding-bottom: 2px;
-  text-align: justify;
+  padding-top: 9px;
+  margin-bottom: 2px;
   letter-spacing: 0.4px;
 }
 
 .status i {
   font-size: 9px;
+
   margin-bottom: 5px;
   padding-right: 4px;
 }
@@ -528,7 +528,7 @@ button:hover {
   }
 
   .grid > span {
-    top: -730px;
+    top: -800px;
     border: none;
     border-bottom: 2px solid #ebf0f8;
     position: relative;
@@ -537,7 +537,7 @@ button:hover {
     text-align: left;
     padding-left: 20%;
     font-size: 15px;
-    height: 4vh;
+    height: 6vh;
     display: flex;
     flex-wrap: wrap;
   }
@@ -585,7 +585,7 @@ button:hover {
 
   .ellips-row::before {
     border-bottom: 12px solid #ebf0f8;
-    margin-left: -60px;
+    margin-left: -67px;
   }
 
   html,
